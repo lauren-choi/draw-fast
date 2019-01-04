@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Draw_Fast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw Fast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0C-o6-fsr">
+                                <rect key="frame" x="0.0" y="60" width="375" height="68.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97l-Cd-bu9">
+                                <rect key="frame" x="0.0" y="128.5" width="375" height="53"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <action selector="getNewPrompt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U0Y-wg-O5F"/>
+                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0h-WM-qqw"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Lk8-nJ-Uak">
+                                <rect key="frame" x="0.0" y="211.5" width="375" height="262.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w9h-B1-4gu">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="68.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNy-Ti-Sr5">
+                                                <rect key="frame" x="154" y="0.0" width="67" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpz-YM-lvf">
+                                                <rect key="frame" x="102.5" y="27.5" width="170.5" height="41"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7VD-ip-fjK">
+                                        <rect key="frame" x="0.0" y="94.5" width="375" height="73.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDT-7g-M9z">
+                                                <rect key="frame" x="158.5" y="0.0" width="58" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpW-Uh-OY4">
+                                                <rect key="frame" x="109" y="32.5" width="157.5" height="41"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LKH-df-m1I">
+                                        <rect key="frame" x="0.0" y="194" width="375" height="68.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-w1-YxO">
+                                                <rect key="frame" x="155.5" y="0.0" width="64" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONh-gm-JNa">
+                                                <rect key="frame" x="104" y="27.5" width="167" height="41"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkk-yD-CKG">
+                                <rect key="frame" x="0.0" y="534" width="375" height="68"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="60"/>
+                                <color key="textColor" red="0.89967211787564771" green="0.22186723571579559" blue="0.20475817279529043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="97l-Cd-bu9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0cp-Wj-Fdi"/>
+                            <constraint firstItem="97l-Cd-bu9" firstAttribute="top" secondItem="P0C-o6-fsr" secondAttribute="bottom" constant="30" id="3Rw-K5-tsW"/>
+                            <constraint firstItem="Lkk-yD-CKG" firstAttribute="top" secondItem="Lk8-nJ-Uak" secondAttribute="bottom" constant="60" id="5nP-IL-8tb"/>
+                            <constraint firstItem="Lkk-yD-CKG" firstAttribute="top" secondItem="Lk8-nJ-Uak" secondAttribute="bottom" constant="60" id="6Rb-bx-kEh"/>
+                            <constraint firstItem="P0C-o6-fsr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="CBz-hU-VHY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P0C-o6-fsr" secondAttribute="trailing" id="MxS-TZ-iRa"/>
+                            <constraint firstItem="Lk8-nJ-Uak" firstAttribute="top" secondItem="97l-Cd-bu9" secondAttribute="bottom" constant="30" id="O1d-Tw-pWB"/>
+                            <constraint firstItem="P0C-o6-fsr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QTM-ux-Z31"/>
+                            <constraint firstItem="Lkk-yD-CKG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UZu-uU-tL1"/>
+                            <constraint firstItem="Lk8-nJ-Uak" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VVK-YW-gQR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lkk-yD-CKG" secondAttribute="trailing" id="XYU-yL-8kY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="97l-Cd-bu9" secondAttribute="trailing" id="ZUz-G2-M1g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lkk-yD-CKG" secondAttribute="bottom" constant="65" id="efY-u1-gn3"/>
+                            <constraint firstItem="97l-Cd-bu9" firstAttribute="top" secondItem="P0C-o6-fsr" secondAttribute="bottom" id="nLs-dM-Cap"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lk8-nJ-Uak" secondAttribute="trailing" id="srh-DE-b1Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="newAction" destination="KpW-Uh-OY4" id="eHN-M0-y6S"/>
+                        <outlet property="newPrompt" destination="97l-Cd-bu9" id="tyw-lr-DJ6"/>
+                        <outlet property="newSetting" destination="ONh-gm-JNa" id="fqB-L0-ynC"/>
+                        <outlet property="newSubject" destination="lpz-YM-lvf" id="T4m-Ht-8GF"/>
+                        <outlet property="timerLabel" destination="Lkk-yD-CKG" id="AWf-Lx-FoW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>
